@@ -3,7 +3,8 @@
         "./src/**/*"
     ],
     "compilerOptions": {
-        // "strict": true,
+        "strict": true, /** この中に暗黙的なanyは許可しない設定が入っている */
+        "noImplicitAny": false, // 個別に暗黙的なanyだけを許可する設定も可能
         "esModuleInterop": true,
         "lib": [
             "dom",
